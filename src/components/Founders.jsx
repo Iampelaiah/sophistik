@@ -1,16 +1,21 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Terminal, Database, Cloud, Layers } from 'lucide-react';
+import { Github, Linkedin, Twitter, Terminal, Database, Cloud, Layers, Globe } from 'lucide-react';
 
 const founders = [
   {
-    name: 'Founder One',
-    role: 'Security Architect & Lead Engineer',
-    bio: 'Specialist in secure distributed systems and cloud infrastructure. Dedicated to building architectures that are resilient, scalable, and secure by default.',
-    skills: ['Cybersecurity', 'Node.js', 'Kubernetes', 'AWS', 'Rust', 'Go'],
+    name: 'Pelaiah',
+    role: 'Security Architect & Full-Stack Engineer',
+    bio: 'Specialist in backend systems, high-fidelity frontend, and automated cloud infrastructure. Dedicated to building secure, mission-critical digital ecosystems from the surface to the core.',
+    skills: ['Node.js', 'React', 'Kubernetes', 'AWS', 'Terraform', 'GitHub Actions', 'Rust', 'TypeScript'],
     gradient: 'linear-gradient(135deg, #10b981, #34d399)',
     glow: 'rgba(16,185,129,0.4)',
     icon: <Database size={36} />,
-    initials: 'F1',
+    socials: [
+      { platform: 'github', url: 'https://github.com/Iampelaiah' },
+      { platform: 'linkedin', url: '#' },
+      { platform: 'twitter', url: '#' },
+      { platform: 'portfolio', url: '#' }
+    ]
   },
   {
     name: 'Founder Two',
@@ -20,7 +25,12 @@ const founders = [
     gradient: 'linear-gradient(135deg, #6366f1, #818cf8)',
     glow: 'rgba(99,102,241,0.4)',
     icon: <Layers size={36} />,
-    initials: 'F2',
+    socials: [
+      { platform: 'github', url: '#' },
+      { platform: 'linkedin', url: '#' },
+      { platform: 'twitter', url: '#' },
+      { platform: 'portfolio', url: '#' }
+    ]
   },
 ];
 
@@ -91,20 +101,29 @@ const Founders = () => {
 
             {/* Social Links */}
             <div style={{ display: 'flex', gap: '0.875rem' }}>
-              {[Github, Linkedin, Twitter].map((Icon, i) => (
-                <a key={i} href="#" style={{
-                  width: '2.25rem', height: '2.25rem', borderRadius: '50%',
-                  background: 'rgba(255,255,255,0.05)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: 'var(--text-muted)', transition: 'var(--transition-smooth)',
-                }}
-                  onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = '#fff'; }}
-                  onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.color = 'var(--text-muted)'; }}
-                >
-                  <Icon size={16} />
-                </a>
-              ))}
+              {founder.socials.map((social, i) => {
+                const Icon = {
+                  github: Github,
+                  linkedin: Linkedin,
+                  twitter: Twitter,
+                  portfolio: Globe
+                }[social.platform];
+
+                return (
+                  <a key={i} href={social.url} target="_blank" rel="noopener noreferrer" style={{
+                    width: '2.25rem', height: '2.25rem', borderRadius: '50%',
+                    background: 'rgba(255,255,255,0.05)',
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    color: 'var(--text-muted)', transition: 'var(--transition-smooth)',
+                  }}
+                    onMouseOver={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = '#fff'; }}
+                    onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)'; e.currentTarget.style.color = 'var(--text-muted)'; }}
+                  >
+                    <Icon size={16} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         ))}
