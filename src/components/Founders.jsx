@@ -18,10 +18,10 @@ const founders = [
     ]
   },
   {
-    name: 'Founder Two',
-    role: 'High-Fidelity UI/UX Engineer',
-    bio: 'Expert in bridging the gap between sophisticated design and production code. Passionate about creating digital experiences that are as beautiful as they are performant.',
-    skills: ['React', 'TypeScript', 'Next.js', 'Figma', 'WebGL', 'Animation'],
+    name: 'Claude',
+    role: 'Full-Stack Logic & Systems Architect',
+    bio: 'Expert in bridging the gap between legacy systems and modern high-fidelity interfaces. Specialist in complex data logic, database optimization, and scalable backend architectures.',
+    skills: ['UX/UI Design', 'PostgreSQL', 'Python', 'JSON Schema', 'REST APIs', 'Legacy Migration', 'TypeScript', 'SQL'],
     gradient: 'linear-gradient(135deg, #6366f1, #818cf8)',
     glow: 'rgba(99,102,241,0.4)',
     icon: <Layers size={36} />,
