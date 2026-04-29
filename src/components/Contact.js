@@ -46,7 +46,7 @@ const Contact = () => {
             Get In Touch
           </p>
           <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', marginBottom: '1rem' }}>
-            Let's define the <span className="text-gradient">future of flow</span> together
+            Let&apos;s define the <span className="text-gradient">future of flow</span> together
           </h2>
           <p style={{ color: 'var(--text-muted)', lineHeight: 1.7, marginBottom: '1.875rem', fontSize: '0.9rem' }}>
             Whether you have a project in mind, want to explore a collaboration, or just want to talk tech — our inbox is always open.
@@ -96,7 +96,7 @@ const Contact = () => {
             <div style={{ textAlign: 'center', padding: '2.5rem 0' }}>
               <Sparkles size={48} color="var(--primary)" style={{ marginBottom: '1rem' }} />
               <h3 style={{ marginBottom: '0.5rem' }}>Message sent!</h3>
-              <p style={{ color: 'var(--text-muted)' }}>We'll be in touch very soon.</p>
+              <p style={{ color: 'var(--text-muted)' }}>We&apos;ll be in touch very soon.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>

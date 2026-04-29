@@ -17,6 +17,9 @@ export const metadata = {
   title: "SophiStic | Secure by Design. High-Fidelity by Nature.",
   description: "A boutique software engineering studio specialized in building secure, high-fidelity digital products.",
   keywords: ["fullstack development", "secure by design", "high-fidelity", "React", "Node.js", "API design", "software studio", "Cape Town"],
+};
+
+export const viewport = {
   themeColor: "#6366f1",
 };
 

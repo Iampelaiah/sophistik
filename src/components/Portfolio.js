@@ -55,10 +55,10 @@ const Portfolio = () => {
           Our Work
         </p>
         <h2 style={{ fontSize: 'clamp(1.5rem, 4vw, 2.8rem)', marginBottom: '0.75rem' }}>
-          Projects we're <span className="text-gradient">proud of</span>
+          Projects we&apos;re <span className="text-gradient">proud of</span>
         </h2>
         <p style={{ color: 'var(--text-muted)', maxWidth: '28.75rem', margin: '0 auto', lineHeight: 1.7, fontSize: '0.9rem' }}>
-          A curated selection of products and platforms we've built from scratch or helped scale.
+          A curated selection of products and platforms we&apos;ve built from scratch or helped scale.
         </p>
       </div>
 

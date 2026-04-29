@@ -88,7 +88,7 @@ const Navbar = ({ scrolled }) => {
             onMouseOver={e => { e.currentTarget.style.transform = 'scale(1.05)'; e.currentTarget.style.boxShadow = '0 0 1.8rem rgba(99,102,241,0.5)'; }}
             onMouseOut={e => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.boxShadow = '0 0 1.2rem rgba(99,102,241,0.3)'; }}
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
         </li>
       </ul>

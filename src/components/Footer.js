@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Layers, Github, Linkedin, Twitter } from 'lucide-react';
+import { Layers, Terminal, Briefcase, X } from 'lucide-react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
               A boutique software studio built by two engineers who care about craft, performance, and the details that matter.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem' }}>
-              {[Github, Linkedin, Twitter].map((Icon, i) => (
+              {[Terminal, Briefcase, X].map((Icon, i) => (
                 <a key={i} href="#" style={{
                   width: '2.375rem', height: '2.375rem', borderRadius: '50%',
                   background: 'rgba(255,255,255,0.05)',

@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Github, Linkedin, Twitter, Database, Layers, Globe } from 'lucide-react';
+import { Terminal, Briefcase, X, Database, Layers, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const founders = [
@@ -114,9 +114,9 @@ const Founders = () => {
             <div style={{ display: 'flex', gap: '0.875rem' }}>
               {founder.socials.map((social, i) => {
                 const Icon = {
-                  github: Github,
-                  linkedin: Linkedin,
-                  twitter: Twitter,
+                  github: Terminal,
+                  linkedin: Briefcase,
+                  twitter: X,
                   portfolio: Globe
                 }[social.platform];
 
